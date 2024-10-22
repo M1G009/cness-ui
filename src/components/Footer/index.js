@@ -39,7 +39,7 @@ function Footer() {
       <div className="container px-4 lg:px-6 py-2.5">
         <div className="justify-between	flex py-[30px]">
           <div>
-            <h3 className="text-mainColor">Be Connected. Be Conscious</h3>
+            <h3 className="text-primary-main">Be Connected. Be Conscious</h3>
             <p>
               Get the latest updates, insights, and stories from our conscious
               community <br /> delivered straight to your inbox.
@@ -54,7 +54,7 @@ function Footer() {
             <Button
               variant="secondary"
               Icon={FaCircleChevronLeft}
-              iconColor="text-mainColor"
+              iconColor="text-primary-main"
             >
               Subscribe
             </Button>
@@ -63,7 +63,7 @@ function Footer() {
         <div className="pt-[30px] md:gap-[40px] md:flex justify-between">
           <div className="mb-6 md:mb-0 max-w-[400px]">
             <Link to="/" className="flex items-center">
-              <span className="self-center text-xl font-semibold text-mainColor">
+              <span className="self-center text-xl font-semibold text-primary-main">
                 logo
               </span>
             </Link>
@@ -77,7 +77,7 @@ function Footer() {
           <div className="w-full grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
             {sections.map(({ title, links }, idx) => (
               <div key={idx}>
-                <h2 className="mb-6 text-sm font-semibold text-mainColor">
+                <h2 className="mb-6 text-sm font-semibold text-primary-main">
                   {title}
                 </h2>
                 <ul>

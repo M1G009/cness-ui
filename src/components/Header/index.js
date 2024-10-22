@@ -15,14 +15,14 @@ function Header() {
       <nav className="container px-4 lg:px-6 py-4">
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <Link to="/" className="flex items-center">
-            <span className="self-center text-xl font-semibold text-mainColor">
+            <span className="self-center text-xl font-semibold text-primary-main">
               logo
             </span>
           </Link>
           <div className="flex items-center lg:order-2 gap-3">
-            <BsChatLeftFill size={24} className="text-mainColor" />
-            <IoMdSearch size={24} className="text-mainColor" />
-            <IoIosNotifications size={24} className="text-mainColor" />
+            <BsChatLeftFill size={24} className="text-primary-main" />
+            <IoMdSearch size={24} className="text-primary-main" />
+            <IoIosNotifications size={24} className="text-primary-main" />
             <button
               type="button"
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"

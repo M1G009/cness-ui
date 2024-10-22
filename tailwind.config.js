@@ -21,7 +21,6 @@ module.exports = {
           current: "currentColor",
           transparent: "transparent",
         },
-        mainColor: "#1A237E",
         bgGray: "#F6F6F6",
         primary: {
           main: "#1A237E",

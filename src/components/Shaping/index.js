@@ -6,7 +6,7 @@ function Shaping() {
       <div className="container mx-auto">
         <section className="flex flex-col md:flex-row justify-between py-8">
           <div className="md:w-1/3">
-            <h2 className="text-3xl font-bold mb-4 text-mainColor">
+            <h2 className="text-3xl font-bold mb-4 text-primary-main">
               Shaping Organizations, Empowering New Possibilities
             </h2>
             <p className="text-lg">
@@ -22,10 +22,10 @@ function Shaping() {
                 className="w-12 h-12"
               />
               <div className="text-center">
-                <h3 className="text-lg font-bold text-mainColor">
+                <h3 className="text-lg font-bold text-primary-main">
                   Elevate with best practices
                 </h3>
-                <p className="text-sm text-mainColor">
+                <p className="text-sm text-primary-main">
                   Lead in quality and innovation.
                 </p>
               </div>
@@ -38,10 +38,10 @@ function Shaping() {
                 className="w-12 h-12"
               />
               <div className="text-center">
-                <h3 className="text-lg font-bold text-mainColor">
+                <h3 className="text-lg font-bold text-primary-main">
                   Accelerate with confidence
                 </h3>
-                <p className="text-sm text-mainColor">
+                <p className="text-sm text-primary-main">
                   Drive impactful results.
                 </p>
               </div>
@@ -54,10 +54,12 @@ function Shaping() {
                 className="w-12 h-12"
               />
               <div className="text-center">
-                <h3 className="text-lg font-bold text-mainColor">
+                <h3 className="text-lg font-bold text-primary-main">
                   Innovate with precision
                 </h3>
-                <p className="text-sm text-mainColor">Explore new frontiers.</p>
+                <p className="text-sm text-primary-main">
+                  Explore new frontiers.
+                </p>
               </div>
             </div>
 
@@ -68,10 +70,12 @@ function Shaping() {
                 className="w-12 h-12"
               />
               <div className="text-center">
-                <h3 className="text-lg font-bold text-mainColor">
+                <h3 className="text-lg font-bold text-primary-main">
                   Collaborate for success
                 </h3>
-                <p className="text-sm text-mainColor">Achieve more together.</p>
+                <p className="text-sm text-primary-main">
+                  Achieve more together.
+                </p>
               </div>
             </div>
           </div>

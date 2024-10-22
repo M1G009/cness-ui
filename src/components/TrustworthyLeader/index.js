@@ -9,7 +9,7 @@ function TrustworthyLeader() {
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="md:w-1/2">
             <h1 className="text-2xl font-bold mb-4">Certifications</h1>
-            <h2 className="text-2xl mb-2 text-mainColor">
+            <h2 className="text-2xl mb-2 text-primary-main">
               Be known as a reliable trustworthy leader
             </h2>
             <p className="text-sm mb-6">
@@ -24,7 +24,7 @@ function TrustworthyLeader() {
             <Button
               variant="secondary"
               Icon={FaCircleChevronLeft}
-              iconColor="text-mainColor"
+              iconColor="text-primary-main"
             >
               Get your CNESS certification
             </Button>
