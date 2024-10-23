@@ -13,7 +13,7 @@ const Button = ({
     "flex items-center px-4 py-2 rounded-[18px] text-black font-semibold";
   const variants = {
     primary: "bg-primary-main text-white",
-    secondary: "bg-yellow-500 text-black",
+    secondary: "bg-[#FFCC00] text-black",
     danger: "bg-red-500 text-white hover:bg-red-600",
     outline: "border border-blue-500 text-blue-500",
   };
