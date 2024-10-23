@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoIosNotifications, IoMdSearch } from "react-icons/io";
-import { BsChatLeftFill } from "react-icons/bs";
+import ChatIcon from "../../utills/Icon/ChatIcon";
+import SearchIcon from "../../utills/Icon/SearchIcon";
+import NotificationsIcon from "../../utills/Icon/NotificationsIcon";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,15 +15,17 @@ function Header() {
     <header>
       <nav className="container px-4 lg:px-6 py-4">
         <div className="flex flex-wrap justify-between items-center mx-auto">
-          <Link to="/" className="flex items-center">
-            <span className="self-center text-xl font-semibold text-primary-main">
-              logo
-            </span>
+          <Link to="/" className="">
+            <img
+              src={"/images/logo/cness-logo.png"}
+              alt="Logo"
+              className="max-w-[144px] h-[62px]"
+            />
           </Link>
           <div className="flex items-center lg:order-2 gap-3">
-            <BsChatLeftFill size={24} className="text-primary-main" />
-            <IoMdSearch size={24} className="text-primary-main" />
-            <IoIosNotifications size={24} className="text-primary-main" />
+            <ChatIcon />
+            <SearchIcon />
+            <NotificationsIcon />
             <button
               type="button"
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden"
@@ -73,7 +76,7 @@ function Header() {
                 <li key={index}>
                   <Link
                     to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
-                    className="block"
+                    className="block text-title-xsm font-normal text-black"
                   >
                     {item}
                   </Link>
