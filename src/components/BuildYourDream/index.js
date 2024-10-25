@@ -1,8 +1,10 @@
 import React from "react";
+import Button from "../common/Button";
+import { FaCircleChevronLeft } from "react-icons/fa6";
 
 const BuildYourDream = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full py-[40px]">
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-[20px]">
           {/* Left Section */}
@@ -156,6 +158,13 @@ const BuildYourDream = () => {
                 </div>
               </div>
             </div>
+            <Button
+              variant="secondary"
+              Icon={FaCircleChevronLeft}
+              iconColor="text-primary-main"
+            >
+              Build Your Dream
+            </Button>
           </div>
 
           {/* Right Section */}

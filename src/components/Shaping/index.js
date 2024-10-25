@@ -17,11 +17,11 @@ function Shaping() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex flex-col items-center justify-center">
               <img
-                src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                src="/images/shaping1.png"
                 alt="Icon 1"
-                className="w-12 h-12"
+                className="w-[72px] h-[46px]"
               />
-              <div className="text-center">
+              <div className="text-center pt-[20px]">
                 <h3 className="text-lg font-bold text-primary-main">
                   Elevate with best practices
                 </h3>
@@ -33,11 +33,11 @@ function Shaping() {
 
             <div className="flex flex-col items-center justify-center">
               <img
-                src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                src="/images/shaping4.png"
                 alt="Icon 2"
-                className="w-12 h-12"
+                className="w-[57px] h-[65px]"
               />
-              <div className="text-center">
+              <div className="text-center pt-[20px]">
                 <h3 className="text-lg font-bold text-primary-main">
                   Accelerate with confidence
                 </h3>
@@ -49,11 +49,11 @@ function Shaping() {
 
             <div className="flex flex-col items-center justify-center">
               <img
-                src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                src="/images/shaping2.png"
                 alt="Icon 3"
-                className="w-12 h-12"
+                className="w-[62px] h-[65px]"
               />
-              <div className="text-center">
+              <div className="text-center pt-[20px]">
                 <h3 className="text-lg font-bold text-primary-main">
                   Innovate with precision
                 </h3>
@@ -65,11 +65,11 @@ function Shaping() {
 
             <div className="flex flex-col items-center justify-center">
               <img
-                src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+                src="/images/shaping3.png"
                 alt="Icon 4"
-                className="w-12 h-12"
+                className="w-[55px] h-[60px]"
               />
-              <div className="text-center">
+              <div className="text-center pt-[20px]">
                 <h3 className="text-lg font-bold text-primary-main">
                   Collaborate for success
                 </h3>

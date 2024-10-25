@@ -12,7 +12,7 @@ function TrustworthyLeader() {
             <h2 className="text-2xl mb-2 text-primary-main">
               Be known as a reliable trustworthy leader
             </h2>
-            <p className="text-sm mb-6">
+            <p className="text-sm mb-6 text-black font-normal">
               Becoming CNESS certified is more than just earning a badge: it's
               about aligning with a global standard of consciousness in business
               and practices. Certification validates your dedication to ethical,
@@ -33,9 +33,28 @@ function TrustworthyLeader() {
           {/* Image Section */}
           <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
             <img
-              src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE"
+              src="/images/trustworthyleader.png"
               alt="CNESS Certification Badge"
-              className="w-48 h-48"
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+
+        <div className="pt-[20px] flex flex-col md:flex-row md:space-x-8">
+          <div className="md:w-1/2">
+            <img
+              src="/images/celebrating.png"
+              alt="CNESS Certification Badge"
+              className="w-full h-full"
+            />
+          </div>
+
+          {/* Image Section */}
+          <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+            <img
+              src="/images/celebrating2.png"
+              alt="CNESS Certification Badge"
+              className="w-full h-full"
             />
           </div>
         </div>
