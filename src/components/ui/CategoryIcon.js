@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoryIcon = ({ iconSrc, iconName }) => {
   return (
-    <div className="flex items-center border px-5 py-2.5 rounded-[50px] border-solid border-black mr-3 my-1.5">
+    <div className="flex items-center border px-5 py-2 rounded-[50px] border-solid border-black mr-3 my-1.5">
       {
         iconSrc ? <span className="mr-2">
           <img

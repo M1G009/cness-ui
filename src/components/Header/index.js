@@ -63,7 +63,7 @@ function Header() {
               isMobileMenuOpen ? "block" : "hidden"
             } w-full lg:w-auto`}
           >
-            <ul className="flex flex-col lg:flex-row lg:space-x-8 mt-4 lg:mt-0">
+            <ul className="flex flex-col lg:flex-row lg:space-x-4 mt-4 lg:mt-0">
               {[
                 "Social",
                 "Trending",
@@ -72,6 +72,7 @@ function Header() {
                 "Best Practices",
                 "Certifications",
                 "Build Your Dream",
+                "Organizations"
               ].map((item, index) => (
                 <li key={index}>
                   <Link

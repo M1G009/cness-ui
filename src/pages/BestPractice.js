@@ -8,11 +8,11 @@ import SliderBlogCard from "../components/ui/SliderBlogCard";
 import TopicBlogCard from "../components/ui/TopicBlogCard";
 
 const categories = [
-  { name: "Information Technology" },
-  { name: "Consciousness" },
-  { name: "Music" },
-  { name: "Music" },
-  { name: "Music" },
+       
+  { name: "Consciousness" ,image:'./images/award.png'},
+  { name: "Music" ,image:'./images/award.png'},
+  { name: "Music" ,image:'./images/award.png'},
+  { name: "Music" ,image:'./images/award.png'},
 ]
 const users = [
   { name: 'Suresh Rajan', image: './images/demoimage.png', online: true },
@@ -27,6 +27,13 @@ const myconnections = [
   { name: 'Deepa Srinivasan', image: '', online: true },
   { name: 'Prasad Varma', image: './images/demoimage.png', online: false },
   { name: 'Jenn Ortega', image: './images/demoimage.png', online: false },
+];
+const topContributor = [
+  { name: 'Michael Brown', image: './images/demoimage.png', award: './images/award.png', points: '195' },
+  { name: 'Anand Joshi', image: './images/demoimage.png', award: './images/award.png', points: '195' },
+  { name: 'Deepa Srinivasan', image: '', award: './images/award.png', points: '195' },
+  { name: 'Prasad Varma', image: './images/demoimage.png', award: './images/award.png', points: '195' },
+  { name: 'Jenn Ortega', image: './images/demoimage.png', award: './images/award.png', points: '195' },
 ];
 const items = [
   { id: 1, image: '/images/demoimage.png', title: 'IT', name: 'John Doe' },
@@ -124,7 +131,7 @@ export default function BestPractice() {
           <div className="flex justify-center items-center flex-wrap h-scree p-5">
             {
               categories.map((el => {
-                return <CategoryIcon iconSrc={el.src} iconName={el.name} />
+                return <CategoryIcon iconSrc={el.image} iconName={el.name} />
               }))
             }
           </div>
@@ -134,56 +141,69 @@ export default function BestPractice() {
               What can we help you find?
             </h2>
             <div className="flex flex-col items-center">
-              <div className="relative w-full bg-[#F0F0F2] rounded-lg">
+              <div className="relative w-full bg-[#F6F6F6] rounded-lg">
                 {/* Post Button */}
                 <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
 
                 <input
                   type="text"
                   placeholder="Search topic or category of your choice "
-                  className="w-full rounded-lg px-5 py-3 pl-10 pr-16 bg-white focus:outline-none bg-transparent border-0"
+                  className="w-full rounded-lg px-5 bg-[#F6F6F6] py-3 pl-10 pr-16  focus:outline-none bg-transparent border-0"
                 />
               </div>
             </div>
           </div>
 
           <div className="mt-10">
-            <div className="flex justify-between items-center mb-3">
+            <div className="flex justify-between items-center ">
               <h3 className="text-xl font-semibold leading-9">
                 Trending solutions on CNESS
               </h3>
             </div>
             <div>
-              <h2 className="font-medium text-2xl text-black mb-6">
-                What can we help you find?
-              </h2>
 
-              <div className="flex flex-row items-start justify-start gap-2 mx-1">
+              <div className=" p-3  rounded-md">
+                <div className="flex flex-row items-start justify-start gap-2 mx-1 ">
 
-                <div className=" rounded-t-lg bg-[#FFCC00] p-2">
-                  <p className="font-medium text-base text-[#1A237E]">Manufacturing</p>
+                  <div className=" rounded-t-lg bg-[#FFCC00] p-2">
+                    <p className="font-medium text-xs text-[#1A237E]">Manufacturing</p>
+
+                  </div>
+                  <div className="  p-2">
+                    <p className="font-medium text-xs text-[#1A237E]">AI</p>
+
+                  </div>
+                  <div className="  p-2">
+                    <p className="font-medium text-xs text-[#1A237E]">Consciouness</p>
+
+                  </div>
+                  <div className="  p-2">
+                    <p className="font-medium text-xs text-[#1A237E]">Media</p>
+
+                  </div>
+
 
                 </div>
-                <div className="  p-2">
-                  <p className="font-medium text-base text-[#1A237E]">AI</p>
+                <div className="flex bg-[#F6F6F6] p-4 rounded-md">
+                  <div className="flex px-1">
+                    <SliderBlogCard imageSrc="./images/test-story-image.png"
+                      title="Sample Blog Post"
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit amet at elit." />
+                  </div>
+                  <div className="flex px-1">
+                    <SliderBlogCard imageSrc="./images/test-story-image.png"
+                      title="Sample Blog Post"
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit amet at elit." />
+                  </div>
+                  <div className="flex px-1">
+                    <SliderBlogCard imageSrc="./images/test-story-image.png"
+                      title="Sample Blog Post"
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit amet at elit." />
+                  </div>
 
                 </div>
-                <div className="  p-2">
-                  <p className="font-medium text-base text-[#1A237E]">Consciouness</p>
-
-                </div>
-                <div className="  p-2">
-                  <p className="font-medium text-base text-[#1A237E]">Media</p>
-
-                </div>
 
 
-              </div>
-
-              <div className="flex gap-3">
-                <SliderBlogCard imageSrc="./images/test-story-image.png"
-                  title="Sample Blog Post"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit amet at elit." />
               </div>
 
             </div>
@@ -299,39 +319,108 @@ export default function BestPractice() {
               <p className="text-sm font-semibold">Top Topics of the week</p>
               <a href="" className="underline" >View all</a>
             </div>
-            <div className="flex flex-col items-center justify-center  py-10 px-5  ">
-              <div className="w-full md:w-1/2">
-                <img
-                  src="./images/test-full-width.png"
-                  alt="Woman painting outdoors"
-                  className="w-full rounded-lg shadow-md"
-                />
-              </div>
-              <div className="w-full mt-5 ">
-                <div className="flex items-center justify-center mb-4">
-                <p className=" text-sm font-medium">Certified Green Business</p>
+            <div className=" flex mt-2 ">
+              <div className="flex flex-col items-center justify-center px-2  ">
+                <div className="w-full">
                   <img
                     src="./images/test-full-width.png"
-                    alt="Certified Green Business"
-                    className="h-10 w-10 ml-2"
+                    alt="Woman painting outdoors"
+                    className="w-full"
                   />
-                  
                 </div>
-                <p className="text-gray-600 mb-2">Contributed: 578</p>
-                <h2 className="text-2xl font-bold mb-2">
-                  Sustainable Art Practices: How to Use Eco-Friendly Materials for Artistic Creation
-                </h2>
-                <p className="text-gray-700">
-                  Learn about the benefits of using eco-friendly materials in your art practice, including:
-                </p>
-                <ul className="list-disc list-inside">
-                  <li>Reducing your environmental impact</li>
-                  <li>Supporting sustainable businesses</li>
-                  <li>Creating unique and expressive art</li>
-                </ul>
+                <div className="w-full mt-5 ">
+                  <div className="flex items-center justify-between mb-4">
+                    <p className=" text-xs font-medium">Certified Green Business</p>
+                    <img
+                      src="./images/test-full-width.png"
+                      alt="Certified Green Business"
+                      className="h-10 w-10 ml-2"
+                    />
+
+                  </div>
+                  <p className=" mb-2 text-xs text-[#606060]">Contributed: 578</p>
+                  <p className="text-xs text-[#606060]">
+                    Sustainable Art Practices: How to Use Eco-Friendly Materials for Artistic Creation
+                  </p>
+
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center px-2  ">
+                <div className="w-full">
+                  <img
+                    src="./images/test-full-width.png"
+                    alt="Woman painting outdoors"
+                    className="w-full"
+                  />
+                </div>
+                <div className="w-full mt-5 ">
+                  <div className="flex items-center justify-between mb-4">
+                    <p className=" text-xs font-medium">Certified Green Business</p>
+                    <img
+                      src="./images/test-full-width.png"
+                      alt="Certified Green Business"
+                      className="h-10 w-10 ml-2"
+                    />
+
+                  </div>
+                  <p className=" mb-2 text-xs text-[#606060]">Contributed: 578</p>
+                  <p className="text-xs text-[#606060]">
+                    Sustainable Art Practices: How to Use Eco-Friendly Materials for Artistic Creation
+                  </p>
+
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center px-2  ">
+                <div className="w-full">
+                  <img
+                    src="./images/test-full-width.png"
+                    alt="Woman painting outdoors"
+                    className="w-full"
+                  />
+                </div>
+                <div className="w-full mt-5 ">
+                  <div className="flex items-center justify-between mb-4">
+                    <p className="  text-xs font-medium">Certified Green Business</p>
+                    <img
+                      src="./images/test-full-width.png"
+                      alt="Certified Green Business"
+                      className="h-10 w-10 ml-2"
+                    />
+
+                  </div>
+                  <p className=" mb-2 text-xs text-[#606060]">Contributed: 578</p>
+                  <p className="text-xs text-[#606060]">
+                    Sustainable Art Practices: How to Use Eco-Friendly Materials for Artistic Creation
+                  </p>
+
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center px-2  ">
+                <div className="w-full">
+                  <img
+                    src="./images/test-full-width.png"
+                    alt="Woman painting outdoors"
+                    className="w-full"
+                  />
+                </div>
+                <div className="w-full mt-5 ">
+                  <div className="flex items-center justify-between mb-4">
+                    <p className=" text-xs font-medium">Certified Green Business</p>
+                    <img
+                      src="./images/test-full-width.png"
+                      alt="Certified Green Business"
+                      className="h-10 w-10 ml-2"
+                    />
+
+                  </div>
+                  <p className=" mb-2 text-xs text-[#606060]">Contributed: 578</p>
+                  <p className="text-xs text-[#606060]">
+                    Sustainable Art Practices: How to Use Eco-Friendly Materials for Artistic Creation
+                  </p>
+
+                </div>
               </div>
             </div>
-
 
           </div>
 
@@ -342,87 +431,168 @@ export default function BestPractice() {
         <div className="w-full md:w-1/4">
           <div className="flex flex-col">
             {/* First Section */}
-            <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-md shadow-md">
-              <ul className="space-y-4 mx-2">
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/peopleyoufollow.png" alt="People you follow" />
-                  <span className="ml-2 text-black px-2">People you follow</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/campains.png" alt="Campaigns" />
-                  <span className="ml-2 text-black px-2">Campaigns</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/mycollections.png" alt="My collection" />
-                  <span className="ml-2 text-black px-2">My collection</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/announcement.png" alt="Announcements" />
-                  <span className="ml-2 text-black px-2">Announcements</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/trending.png" alt="Trending" />
-                  <span className="ml-2 text-black px-2">Trending</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/mentionandtag.png" alt="Mentions & tags" />
-                  <span className="ml-2 text-black px-2">Mentions & tags</span>
-                </li>
-                <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/leaderboard.png" alt="Leaderboard" />
-                  <span className="ml-2 text-black px-2">Leaderboard</span>
-                </li>
-              </ul>
+            <div className="flex flex-row items-start justify-start gap-2  ">
+
+              <div className=" rounded-t-lg bg-[#f6f6f6] p-2">
+                <p className="font-medium text-xs text-[#1A237E]">IT services</p>
+
+              </div>
+              <div className="  p-2">
+                <p className="font-medium text-xs text-[#1A237E]">AI</p>
+
+              </div>
+              <div className="  p-2">
+                <p className="font-medium text-xs text-[#1A237E]">Consciouness</p>
+
+              </div>
+              <div className="  p-2">
+                <p className="font-medium text-xs text-[#1A237E]">Media</p>
+
+              </div>
+
+
             </div>
 
-            {/* My Dreambuilders Section */}
-            <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-lg shadow-md mt-5">
-              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">My Dreambuilders</h3>
-              <ul className="space-y-4 mb-4">
-                {users.map((user, index) => (
-                  <li key={index} className="flex items-center">
-                    <span
-                      className={`w-2 h-2 rounded-full mr-3 ${user.online ? 'bg-green-500' : 'bg-gray-400'}`}
-                    />
-                    {user.image ? (
-                      <img className="w-8 h-8 rounded-full mr-3" src={user.image} alt={user.name} />
-                    ) : (
-                      <div className="w-8 h-8 bg-gray-200 rounded-full mr-3 flex items-center justify-center">
-                        <span className="text-black px-2">{user.name.charAt(0)}</span>
+            <p className="text-sm font-semibold py-3">Trending in IT services</p>
+            <div className="flex flex-col ">
+              <div className="flex flex-row items-start justify-start gap-2  ">
+
+                <div className=" rounded-t-lg bg-[#f6f6f6] p-2">
+                  <p className="font-medium text-xs text-[#1A237E]">This Week</p>
+
+                </div>
+                <div className="  p-2">
+                  <p className="font-medium text-xs text-[#1A237E]">This Time</p>
+
+                </div>
+                <div className="  p-2">
+                  <p className="font-medium text-xs text-[#1A237E]">All Time</p>
+
+                </div>
+
+
+
+              </div>
+
+              <div className="flex flex-col  bg-[#f6f6f6] p-3">
+                <div className="flex flex-row justify-between items-center mb-5">
+                  <h2 className="size-4 text-nowrap text-[#1A237E]">Top Contributors</h2>
+                  <img className="h-auto w-auto" src="./images/menu.png" alt="menu" />
+                </div>
+
+                <ul className="space-y-4 mb-4">
+                  {topContributor.map((user, index) => (
+                    <li key={index} className="flex items-center justify-between ">
+                      <div className="flex flex-row">
+                        {user.image ? (
+                          <img className="w-8 h-8 rounded-full mr-3" src={user.image} alt={user.name} />
+                        ) : (
+                          <div className="w-8 h-8 bg-gray-200 rounded-full mr-3 flex items-center justify-center">
+                            <span className="text-black px-2">{user.name.charAt(0)}</span>
+                          </div>
+                        )}
+                        <span className="text-black size-4 text-nowrap">{user.name}</span>
+
+                      </div >
+
+                      <div className="flex flex-row ">
+                        <img className="w-4 h-4 rounded-full mr-3" src={user.award} alt={""} />
+                        <span className="text-black text-sm text-nowrap">{user.points}</span>
+
                       </div>
-                    )}
-                    <span className="text-black size-4 text-nowrap">{user.name}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href="#see-all" className="text-nowrap text-[#1A237E] size-4 underline">
-                See all
-              </a>
+
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex ">
+                  <a href="#see-all" className="text-nowrap text-[#1A237E] text-xs ">
+                    Refresh
+                  </a>
+                </div>
+
+              </div>
             </div>
 
-            {/* My Connections Section */}
-            <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-lg shadow-md mt-5">
-              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">My Connections</h3>
-              <ul className="space-y-4 mb-4">
-                {myconnections.map((user, index) => (
-                  <li key={index} className="flex items-center">
-                    <span
-                      className={`w-2 h-2 rounded-full mr-3 ${user.online ? 'bg-green-500' : 'bg-gray-400'}`}
-                    />
-                    {user.image ? (
-                      <img className="w-8 h-8 rounded-full mr-3" src={user.image} alt={user.name} />
-                    ) : (
-                      <div className="w-8 h-8 bg-gray-200 rounded-full mr-3 flex items-center justify-center">
-                        <span className="text-black px-2">{user.name.charAt(0)}</span>
-                      </div>
-                    )}
-                    <span className="text-black size-4 text-nowrap">{user.name}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href="#see-all" className="text-nowrap text-[#1A237E] size-4 underline">
-                See all
-              </a>
+            {/*  */}
+
+            <div className="flex flex-col items-center bg-[#f6f6f6] rounded-md justify-center mt-5 p-2  ">
+
+              <div>
+
+
+                <div className="w-full">
+                  <img
+                    src="./images/test-full-width.png"
+                    alt="Woman painting outdoors"
+                    className="w-full"
+                  />
+                </div>
+                <div className="w-full ">
+                  <p className=" text-sm font-medium py-2">Certified Green Business</p>
+                  <div className="flex items-center justify-around py-1">
+                    <p className=" text-sm text-[#606060] font-medium">14.02.24</p>
+                    <p className=" text-sm text-[#606060] font-medium">24 contributors</p>
+                    <div className="flex fltext-[#606060] ex-row ">
+                      <img className="w-4 h-4 rounded-full mr-1" src='./images/award.png' alt={""} />
+                      <span className="text-[#606060] text-sm text-nowrap">195</span>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div className="mt-5">
+
+
+                <div className="w-full">
+                  <img
+                    src="./images/test-full-width.png"
+                    alt="Woman painting outdoors"
+                    className="w-full"
+                  />
+                </div>
+                <div className="w-full  ">
+                  <p className=" text-sm font-medium py-2">Certified Green Business</p>
+                  <div className="flex items-center justify-around py-1">
+                    <p className=" text-sm text-[#606060] font-medium">14.02.24</p>
+                    <p className=" text-sm text-[#606060] font-medium">24 contributors</p>
+                    <div className="flex fltext-[#606060] ex-row ">
+                      <img className="w-4 h-4 rounded-full mr-1" src='./images/award.png' alt={""} />
+                      <span className="text-[#606060] text-sm text-nowrap">195</span>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div className="mt-5">
+
+
+<div className="w-full">
+  <img
+    src="./images/test-full-width.png"
+    alt="Woman painting outdoors"
+    className="w-full"
+  />
+</div>
+<div className="w-full  ">
+  <p className=" text-sm font-medium py-2">Certified Green Business</p>
+  <div className="flex items-center justify-around py-1">
+    <p className=" text-sm text-[#606060] font-medium">14.02.24</p>
+    <p className=" text-sm text-[#606060] font-medium">24 contributors</p>
+    <div className="flex fltext-[#606060] ex-row ">
+      <img className="w-4 h-4 rounded-full mr-1" src='./images/award.png' alt={""} />
+      <span className="text-[#606060] text-sm text-nowrap">195</span>
+
+    </div>
+  </div>
+
+
+</div>
+</div>
             </div>
           </div>
         </div>
