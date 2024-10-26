@@ -1,5 +1,4 @@
-// src/components/ConsciousnessSpotlight.js
-import React from "react"; // Replace with your image path
+import React from "react";
 
 const ConsciousnessSpotlight = () => {
   const organizations = [

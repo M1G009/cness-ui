@@ -8,6 +8,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Social = lazy(() => import("./pages/Social"));
 const Conscious = lazy(() => import("./pages/Conscious"));
 const Certifications = lazy(() => import("./pages/Certifications"));
+const Directory = lazy(() => import("./pages/Directory"));
 
 function App() {
   return (
@@ -44,6 +45,15 @@ function App() {
             element={
               <MainLayout>
                 <Certifications />
+              </MainLayout>
+            }
+          />
+
+          <Route
+            path="/directory"
+            element={
+              <MainLayout>
+                <Directory />
               </MainLayout>
             }
           />
