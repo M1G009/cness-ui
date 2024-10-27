@@ -327,6 +327,10 @@ const MarketPlace = () => {
 
                 </div>
 
+
+
+                
+
                 <div className="mt-10">
                     <div className="flex flex-row justify-between py-3 px-2">
                         <p className="text-sm font-semibold">New music to match your mood</p>
@@ -369,7 +373,7 @@ const MarketPlace = () => {
                 <div className="mt-10">
 
                     <div className=" flex mt-2 ">
-                        <div className="w-full z-10 flex items-center justify-center flex-col p-3 w-1/3">
+                        <div className=" z-10 flex items-center justify-center flex-col p-3 w-1/3">
                             <h2 className="text-sm font-semibold text-black ">MonetizeYour Conscious Creations</h2>
                             <button className="flex    bg-[#FFCC00] rounded-full  font-medium mt-5 px-2 py-1 ">
                                 <span className='text-[10px] text-nowrap font-medium justify-center  text-black'>Start Building</span>

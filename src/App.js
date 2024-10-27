@@ -8,6 +8,7 @@ import Organizations from "./pages/Organizations";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MarketPlace from "./pages/MarketPlace";
+import Trending from "./pages/Trending";
 
 const Home = lazy(() => import("./pages/Home"));
 const Social = lazy(() => import("./pages/Social"));
@@ -92,6 +93,14 @@ function App() {
             element={
               <MainLayout>
                 <MarketPlace />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/trending"
+            element={
+              <MainLayout>
+                <Trending />
               </MainLayout>
             }
           />

@@ -4,6 +4,7 @@ import RatingIcon from "../utills/Icon/RatingIcon";
 import ChevronRight from "../utills/Icon/ChevronRight";
 import CnessFamilyCard from "../components/ui/CnessFamilyCard";
 import Stepper from "../components/ui/Stepper";
+import EcoSystemCard from "../components/ui/EcoSystemCard";
 
 const connectData = [
   {
@@ -211,6 +212,15 @@ export default function Directory() {
               </div>
             </div>
           </div>
+
+          <div className="mt-10">
+            <div >
+              <p className="text-base font-semibold">Build your team of people you trust for your ecosystem</p>
+            </div>
+            <EcoSystemCard />
+          </div>
+
+
           {/* <Stepper /> */}
           <div className="w-full py-[30px] bg-[#1A237E] rounded-lg px-[20px]">
             <div className="flex gap-3 items-center justify-between">
