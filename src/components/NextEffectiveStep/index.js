@@ -4,12 +4,11 @@ import { FaCircleChevronLeft } from "react-icons/fa6";
 
 function NextEffectiveStep() {
   return (
-    <div className="py-[50px]">
+    <div className="py-[80px]">
       <div
-        className="w-full mx-auto py-10 bg-no-repeat bg-cover"
+        className="w-full mx-auto py-10 bg-no-repeat bg-cover h-full"
         style={{
-          backgroundImage: `url('path/to/your/background-image.jpg')`,
-          background: "#000000",
+          backgroundImage: `linear-gradient(44.82deg, #0000008f 5%, rgba(217, 217, 217, 0) 45%), linear-gradient(71.07deg, #3E6473 -1.52%, rgba(62, 100, 115, 0.992272) 30.11%, rgba(115, 115, 115, 0) 76.06%), url('/images/next-effective-step.png')`,
         }}
       >
         <div className="container">

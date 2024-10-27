@@ -8,25 +8,24 @@ const categories = [
   { name: "Music", src: "./images/category-icons/bx-music.png" },
   { name: "Music", src: "./images/category-icons/bx-music.png" },
   { name: "Music", src: "./images/category-icons/bx-music.png" },
-]
+];
 const users = [
-  { name: 'Suresh Rajan', image: './images/demoimage.png', online: true },
-  { name: 'Mia Rodriguez', image: './images/demoimage.png', online: true },
-  { name: 'Vijay Kumar', image: '', online: true },
-  { name: 'Jacob Harris', image: './images/demoimage.png', online: false },
-  { name: 'Divya Prakash', image: './images/demoimage.png', online: false },
+  { name: "Suresh Rajan", image: "./images/demoimage.png", online: true },
+  { name: "Mia Rodriguez", image: "./images/demoimage.png", online: true },
+  { name: "Vijay Kumar", image: "", online: true },
+  { name: "Jacob Harris", image: "./images/demoimage.png", online: false },
+  { name: "Divya Prakash", image: "./images/demoimage.png", online: false },
 ];
 const myconnections = [
-  { name: 'Michael Brown', image: './images/demoimage.png', online: true },
-  { name: 'Anand Joshi', image: './images/demoimage.png', online: true },
-  { name: 'Deepa Srinivasan', image: '', online: true },
-  { name: 'Prasad Varma', image: './images/demoimage.png', online: false },
-  { name: 'Jenn Ortega', image: './images/demoimage.png', online: false },
+  { name: "Michael Brown", image: "./images/demoimage.png", online: true },
+  { name: "Anand Joshi", image: "./images/demoimage.png", online: true },
+  { name: "Deepa Srinivasan", image: "", online: true },
+  { name: "Prasad Varma", image: "./images/demoimage.png", online: false },
+  { name: "Jenn Ortega", image: "./images/demoimage.png", online: false },
 ];
 
 export default function Social() {
-
-  const [postContent, setPostContent] = useState('');
+  const [postContent, setPostContent] = useState("");
 
   const handleInputChange = (event) => {
     setPostContent(event.target.value);
@@ -34,11 +33,11 @@ export default function Social() {
 
   const handleCreatePost = () => {
     // Logic to create a post
-    console.log('Post created:', postContent);
+    console.log("Post created:", postContent);
   };
 
   const handleCancel = () => {
-    setPostContent('');
+    setPostContent("");
   };
 
   return (
@@ -49,38 +48,62 @@ export default function Social() {
           <div className="flex flex-col  bg-[#F6F6F6] p-4 rounded-md shadow-md">
             <div className="flex flex-row justify-between items-center mb-5">
               <h2 className="size-4 text-nowrap text-[#1A237E]">My CNESS</h2>
-              <img className="h-auto w-auto" src="./images/menu.png" alt="menu" />
+              {/* <img className="h-auto w-auto" src="./images/menu.png" alt="menu" /> */}
             </div>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/connection.png" alt="Connections" />
+                <img
+                  className="h-auto w-auto"
+                  src="./images/connection.png"
+                  alt="Connections"
+                />
                 <span className="ml-2 text-black px-2">Connections</span>
               </li>
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/media.png" alt="Media" />
+                <img
+                  className="h-auto w-auto"
+                  src="./images/media.png"
+                  alt="Media"
+                />
                 <span className="ml-2 text-black px-2">Media</span>
               </li>
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/conciousjuorney.png" alt="Conscious Journey" />
+                <img
+                  className="h-auto w-auto"
+                  src="./images/conciousjuorney.png"
+                  alt="Conscious Journey"
+                />
                 <span className="ml-2 text-black px-2">Conscious Journey</span>
               </li>
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/dreamproject.png" alt="Dream Projects" />
+                <img
+                  className="h-auto w-auto"
+                  src="./images/dreamproject.png"
+                  alt="Dream Projects"
+                />
                 <span className="ml-2 text-black px-2">Dream Projects</span>
               </li>
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/conciousshopping.png" alt="Conscious Shopping" />
+                <img
+                  className="h-auto w-auto"
+                  src="./images/conciousshopping.png"
+                  alt="Conscious Shopping"
+                />
                 <span className="ml-2 text-black px-2">Conscious Shopping</span>
               </li>
               <li className="flex items-center">
-                <img className="h-auto w-auto" src="./images/conciousserviceprovider.png" alt="Conscious Service Providers" />
-                <span className="ml-2 text-black px-2">Conscious Service Providers</span>
+                <img
+                  className="h-auto w-auto"
+                  src="./images/conciousserviceprovider.png"
+                  alt="Conscious Service Providers"
+                />
+                <span className="ml-2 text-black px-2">
+                  Conscious Service Providers
+                </span>
               </li>
             </ul>
           </div>
-          <button
-            className=" mt-5 px-6 w-full py-3 rounded-full bg-[#FFCC00] font-medium hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600"
-          >
+          <button className=" mt-5 px-6 w-full py-3 rounded-full bg-[#FFCC00] font-medium hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-600">
             Contribute
           </button>
         </div>
@@ -91,8 +114,11 @@ export default function Social() {
             <CustomVideoPlayer videoSrc="https://www.w3schools.com/html/mov_bbb.mp4" />
             <div className=" px-4 pb-8 flex items-center justify-center absolute">
               <div className="flex flex-row justify-between px-2 ">
-                <div className=' '>
-                  <h1 className=" text-base text-wrap text-white">Join the first Conscious Social Media Super App and Move the World</h1>
+                <div className=" ">
+                  <h1 className=" text-base text-wrap text-white">
+                    Join the first Conscious Social Media Super App and Move the
+                    World
+                  </h1>
 
                   <p className="text-white text-sm my-2 ">
                     Share your opinions and crafts with the world!
@@ -101,22 +127,30 @@ export default function Social() {
               </div>
 
               <button className="flex items-center  justify-center bg-yellow-400 rounded-full px-3 py-2 ">
-                <span className='text-xs text-nowrap font-500 text-black'>Post your Inspirations!</span>
+                <span className="text-xs text-nowrap font-500 text-black">
+                  Post your Inspirations!
+                </span>
                 <div className="ml-4 rounded-full bg-[#1A237E] p-2">
-                  <svg width="16" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.62364 15.6093L10.233 7.99996L2.62364 0.390625L0.738312 2.27596L6.46231 7.99996L0.738312 13.724L2.62364 15.6093Z" fill="white" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 11 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.62364 15.6093L10.233 7.99996L2.62364 0.390625L0.738312 2.27596L6.46231 7.99996L0.738312 13.724L2.62364 15.6093Z"
+                      fill="white"
+                    />
                   </svg>
-
                 </div>
               </button>
             </div>
           </div>
           <div className="flex justify-center items-center flex-wrap h-scree p-5">
-            {
-              categories.map((el => {
-                return <CategoryIcon iconSrc={el.src} iconName={el.name} />
-              }))
-            }
+            {categories.map((el) => {
+              return <CategoryIcon iconSrc={el.src} iconName={el.name} />;
+            })}
           </div>
 
           <div>
@@ -139,7 +173,6 @@ export default function Social() {
                   />
                 </div>
               </div>
-
 
               <div className="flex gap-4 mt-4 justify-end w-full">
                 <button
@@ -175,10 +208,30 @@ export default function Social() {
               </button>
             </div>
             <div className="flex gap-3">
-              <StoryCard videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" title="Got my movie made" userIcon="./images/user.png" userName="Shreya Patel" />
-              <StoryCard videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" title="Got my movie made" userIcon="./images/user.png" userName="Shreya Patel" />
-              <StoryCard videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" title="Got my movie made" userIcon="./images/user.png" userName="Shreya Patel" />
-              <StoryCard videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" title="Got my movie made" userIcon="./images/user.png" userName="Shreya Patel" />
+              <StoryCard
+                videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                title="Got my movie made"
+                userIcon="./images/user.png"
+                userName="Shreya Patel"
+              />
+              <StoryCard
+                videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                title="Got my movie made"
+                userIcon="./images/user.png"
+                userName="Shreya Patel"
+              />
+              <StoryCard
+                videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                title="Got my movie made"
+                userIcon="./images/user.png"
+                userName="Shreya Patel"
+              />
+              <StoryCard
+                videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                title="Got my movie made"
+                userIcon="./images/user.png"
+                userName="Shreya Patel"
+              />
             </div>
 
             <div className="flex flex-col mt-5">
@@ -212,7 +265,6 @@ export default function Social() {
               />
             </div>
           </div>
-
         </div>
 
         {/* Third Part (1/3 width on medium screens and above) */}
@@ -222,31 +274,61 @@ export default function Social() {
             <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-md shadow-md">
               <ul className="space-y-4 mx-2">
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/peopleyoufollow.png" alt="People you follow" />
-                  <span className="ml-2 text-black px-2">People you follow</span>
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/peopleyoufollow.png"
+                    alt="People you follow"
+                  />
+                  <span className="ml-2 text-black px-2">
+                    People you follow
+                  </span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/campains.png" alt="Campaigns" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/campains.png"
+                    alt="Campaigns"
+                  />
                   <span className="ml-2 text-black px-2">Campaigns</span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/mycollections.png" alt="My collection" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/mycollections.png"
+                    alt="My collection"
+                  />
                   <span className="ml-2 text-black px-2">My collection</span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/announcement.png" alt="Announcements" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/announcement.png"
+                    alt="Announcements"
+                  />
                   <span className="ml-2 text-black px-2">Announcements</span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/trending.png" alt="Trending" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/trending.png"
+                    alt="Trending"
+                  />
                   <span className="ml-2 text-black px-2">Trending</span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/mentionandtag.png" alt="Mentions & tags" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/mentionandtag.png"
+                    alt="Mentions & tags"
+                  />
                   <span className="ml-2 text-black px-2">Mentions & tags</span>
                 </li>
                 <li className="flex items-center">
-                  <img className="h-auto w-auto" src="./images/leaderboard.png" alt="Leaderboard" />
+                  <img
+                    className="h-auto w-auto"
+                    src="./images/leaderboard.png"
+                    alt="Leaderboard"
+                  />
                   <span className="ml-2 text-black px-2">Leaderboard</span>
                 </li>
               </ul>
@@ -254,50 +336,80 @@ export default function Social() {
 
             {/* My Dreambuilders Section */}
             <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-lg shadow-md mt-5">
-              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">My Dreambuilders</h3>
+              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">
+                My Dreambuilders
+              </h3>
               <ul className="space-y-4 mb-4">
                 {users.map((user, index) => (
                   <li key={index} className="flex items-center">
                     <span
-                      className={`w-2 h-2 rounded-full mr-3 ${user.online ? 'bg-green-500' : 'bg-gray-400'}`}
+                      className={`w-2 h-2 rounded-full mr-3 ${
+                        user.online ? "bg-green-500" : "bg-gray-400"
+                      }`}
                     />
                     {user.image ? (
-                      <img className="w-8 h-8 rounded-full mr-3" src={user.image} alt={user.name} />
+                      <img
+                        className="w-8 h-8 rounded-full mr-3"
+                        src={user.image}
+                        alt={user.name}
+                      />
                     ) : (
                       <div className="w-8 h-8 bg-gray-200 rounded-full mr-3 flex items-center justify-center">
-                        <span className="text-black px-2">{user.name.charAt(0)}</span>
+                        <span className="text-black px-2">
+                          {user.name.charAt(0)}
+                        </span>
                       </div>
                     )}
-                    <span className="text-black size-4 text-nowrap">{user.name}</span>
+                    <span className="text-black size-4 text-nowrap">
+                      {user.name}
+                    </span>
                   </li>
                 ))}
               </ul>
-              <a href="#see-all" className="text-nowrap text-[#1A237E] size-4 underline">
+              <a
+                href="#see-all"
+                className="text-nowrap text-[#1A237E] size-4 underline"
+              >
                 See all
               </a>
             </div>
 
             {/* My Connections Section */}
             <div className="flex flex-col bg-[#F6F6F6] p-4 rounded-lg shadow-md mt-5">
-              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">My Connections</h3>
+              <h3 className="size-4 text-nowrap text-[#1A237E] mb-6">
+                My Connections
+              </h3>
               <ul className="space-y-4 mb-4">
                 {myconnections.map((user, index) => (
                   <li key={index} className="flex items-center">
                     <span
-                      className={`w-2 h-2 rounded-full mr-3 ${user.online ? 'bg-green-500' : 'bg-gray-400'}`}
+                      className={`w-2 h-2 rounded-full mr-3 ${
+                        user.online ? "bg-green-500" : "bg-gray-400"
+                      }`}
                     />
                     {user.image ? (
-                      <img className="w-8 h-8 rounded-full mr-3" src={user.image} alt={user.name} />
+                      <img
+                        className="w-8 h-8 rounded-full mr-3"
+                        src={user.image}
+                        alt={user.name}
+                      />
                     ) : (
                       <div className="w-8 h-8 bg-gray-200 rounded-full mr-3 flex items-center justify-center">
-                        <span className="text-black px-2">{user.name.charAt(0)}</span>
+                        <span className="text-black px-2">
+                          {user.name.charAt(0)}
+                        </span>
                       </div>
                     )}
-                    <span className="text-black size-4 text-nowrap">{user.name}</span>
+                    <span className="text-black size-4 text-nowrap">
+                      {user.name}
+                    </span>
                   </li>
                 ))}
               </ul>
-              <a href="#see-all" className="text-nowrap text-[#1A237E] size-4 underline">
+              <a
+                href="#see-all"
+                className="text-nowrap text-[#1A237E] size-4 underline"
+              >
                 See all
               </a>
             </div>

@@ -11,6 +11,9 @@ import MarketPlace from "./pages/MarketPlace";
 
 const Home = lazy(() => import("./pages/Home"));
 const Social = lazy(() => import("./pages/Social"));
+const Conscious = lazy(() => import("./pages/Conscious"));
+const Certifications = lazy(() => import("./pages/Certifications"));
+const Directory = lazy(() => import("./pages/Directory"));
 
 function App() {
   return (
@@ -30,6 +33,32 @@ function App() {
             element={
               <MainLayout>
                 <Social />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/conscious"
+            element={
+              <MainLayout>
+                <Conscious />
+              </MainLayout>
+            }
+          />
+
+          <Route
+            path="/certifications"
+            element={
+              <MainLayout>
+                <Certifications />
+              </MainLayout>
+            }
+          />
+
+          <Route
+            path="/directory"
+            element={
+              <MainLayout>
+                <Directory />
               </MainLayout>
             }
           />
