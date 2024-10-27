@@ -211,7 +211,7 @@ export default function Directory() {
               </div>
             </div>
           </div>
-          <Stepper />
+          {/* <Stepper /> */}
           <div className="w-full py-[30px] bg-[#1A237E] rounded-lg px-[20px]">
             <div className="flex gap-3 items-center justify-between">
               <div className="">
