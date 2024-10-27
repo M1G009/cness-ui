@@ -62,11 +62,13 @@ function Footer() {
         </div>
         <div className="pt-[30px] md:gap-[40px] md:flex justify-between">
           <div className="mb-6 md:mb-0 max-w-[400px]">
-            <Link to="/" className="flex items-center">
-              <span className="self-center text-xl font-semibold text-primary-main">
-                logo
-              </span>
-            </Link>
+          <Link to="/" className="">
+            <img
+              src={"/images/logo/cness-logo.png"}
+              alt="Logo"
+              className="max-w-[144px] h-[62px]"
+            />
+          </Link>
             <p className="mt-[20px]">
               Embark on a journey with CNESS, where every step you take is
               towards a more conscious and connected world. Here, your dreams

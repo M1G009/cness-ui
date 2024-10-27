@@ -276,10 +276,6 @@ export default function BestPractice() {
                 </button>
               </div>
             </div>
-
-
-
-
           </div>
           <div className="mt-10">
             <div className="flex justify-between items-center mb-3">
@@ -304,9 +300,7 @@ export default function BestPractice() {
                       <div className="text-lg font-medium">{item.name}</div>
                     </div>
                     <div >
-
                       <div className="text-lg font-medium">{item.title}</div>
-
                     </div>
                   </div>
                 ))}
